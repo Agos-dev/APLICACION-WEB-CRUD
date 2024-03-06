@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+h2{
+  overflow-y: hidden;
+}
+.contenedor{
+  width: 100vw;
+  height: auto;
+}
+.contenedor-header{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.contenedor-header-formulario{
+  width: 40%;
+  padding: 20px;
+}
+
+.contenedor-header-formulario h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+.contenedor-header-formulario button{
+  margin: 30px 0 0 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.contenedor-alumnos{
+  width: 60%;
+  color: black;
+  background-color: rgb(192, 255, 255);
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contenedor-alumnos article{
+  width: 100%;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin: 10px 0 10px 0;
+}
+
+.contenedor-alumnos article h3{
+ font-size: 1.2rem;
+ font-weight: 300;
+ margin: 0 20px 0 0;
+}
+
+.contenedor-alumnos article .cliente p{
+  font-size: 1rem;
+  font-weight: 300;
+ }
+
+ .contenedor-alumnos article .factura p{
+  font-size: 1rem;
+  font-weight: 300;
+ }
+
+.body-login{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+
+}
+.header-login{
+    width: 100%;
+    height: 100%;
+}
+
+.container-form{
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form form{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+  
+  .slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 30%;
+    top: 20%;
+    width: 450px;
+    height: 450px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+  
+.contenedor-alumnos div{
+  display: flex;
+  gap: 10px;
+}
